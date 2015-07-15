@@ -120,7 +120,7 @@ public class ProductServlet {
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String jdbc = "jdbc:mysql://localhost/product";
+            String jdbc = "jdbc:mysql://localhost/products";
             conn = (Connection) DriverManager.getConnection(jdbc, "root", "");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(ProductServlet.class.getName()).log(Level.SEVERE, null, ex);
